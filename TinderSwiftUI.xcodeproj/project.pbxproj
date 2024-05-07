@@ -14,6 +14,8 @@
 		8A9FA5402BEA554800C96359 /* TinderSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9FA53F2BEA554800C96359 /* TinderSwiftUITests.swift */; };
 		8A9FA54A2BEA554800C96359 /* TinderSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9FA5492BEA554800C96359 /* TinderSwiftUIUITests.swift */; };
 		8A9FA54C2BEA554800C96359 /* TinderSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9FA54B2BEA554800C96359 /* TinderSwiftUIUITestsLaunchTests.swift */; };
+		8A9FA5652BEA56BB00C96359 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9FA5642BEA56BB00C96359 /* MainTabView.swift */; };
+		8A9FA5672BEA57C100C96359 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9FA5662BEA57C100C96359 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		8A9FA5452BEA554800C96359 /* TinderSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TinderSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A9FA5492BEA554800C96359 /* TinderSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderSwiftUIUITests.swift; sourceTree = "<group>"; };
 		8A9FA54B2BEA554800C96359 /* TinderSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8A9FA5642BEA56BB00C96359 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		8A9FA5662BEA57C100C96359 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +138,7 @@
 		8A9FA5582BEA55A400C96359 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				8A9FA5662BEA57C100C96359 /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -155,6 +160,11 @@
 		8A9FA55C2BEA55B200C96359 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				8A9FA5632BEA565C00C96359 /* Search */,
+				8A9FA5622BEA565000C96359 /* TabBar */,
+				8A9FA5612BEA564900C96359 /* Cards */,
+				8A9FA5602BEA564500C96359 /* Profile */,
+				8A9FA55F2BEA564100C96359 /* Messaging */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -173,6 +183,42 @@
 				8A9FA5322BEA554800C96359 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		8A9FA55F2BEA564100C96359 /* Messaging */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Messaging;
+			sourceTree = "<group>";
+		};
+		8A9FA5602BEA564500C96359 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		8A9FA5612BEA564900C96359 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		8A9FA5622BEA565000C96359 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				8A9FA5642BEA56BB00C96359 /* MainTabView.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		8A9FA5632BEA565C00C96359 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,8 +351,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A9FA5652BEA56BB00C96359 /* MainTabView.swift in Sources */,
 				8A9FA5312BEA554600C96359 /* RootView.swift in Sources */,
 				8A9FA52F2BEA554600C96359 /* TinderSwiftUIApp.swift in Sources */,
+				8A9FA5672BEA57C100C96359 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
