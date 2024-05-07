@@ -10,14 +10,16 @@ import SwiftUI
 // MARK: - CardView
 struct CardView: View {
     var body: some View {
-        ZStack {
-            
-            Image(.person3)
+        ZStack(alignment: .bottom) {
+            Image(.person1)
                 .resizable()
                 .scaledToFill()
-                .frame(width: cardWidth, height: cardHeight)
-                .clipShape(RoundedRectangle(cornerRadius: 10))
-        }
+            
+            UserInfoView()
+                .padding(.horizontal)
+            
+        }                .frame(width: cardWidth, height: cardHeight)
+            .clipShape(RoundedRectangle(cornerRadius: 10))
     }
 }
 

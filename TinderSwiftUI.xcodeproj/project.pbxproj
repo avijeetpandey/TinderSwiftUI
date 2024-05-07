@@ -17,6 +17,7 @@
 		8A9FA5652BEA56BB00C96359 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9FA5642BEA56BB00C96359 /* MainTabView.swift */; };
 		8A9FA5672BEA57C100C96359 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9FA5662BEA57C100C96359 /* Constants.swift */; };
 		8A9FA56A2BEA5EA900C96359 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9FA5692BEA5EA900C96359 /* CardView.swift */; };
+		8A9FA56C2BEA61AF00C96359 /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9FA56B2BEA61AF00C96359 /* UserInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		8A9FA5642BEA56BB00C96359 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		8A9FA5662BEA57C100C96359 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8A9FA5692BEA5EA900C96359 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		8A9FA56B2BEA61AF00C96359 /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				8A9FA5692BEA5EA900C96359 /* CardView.swift */,
+				8A9FA56B2BEA61AF00C96359 /* UserInfoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 				8A9FA5652BEA56BB00C96359 /* MainTabView.swift in Sources */,
 				8A9FA5312BEA554600C96359 /* RootView.swift in Sources */,
 				8A9FA52F2BEA554600C96359 /* TinderSwiftUIApp.swift in Sources */,
+				8A9FA56C2BEA61AF00C96359 /* UserInfoView.swift in Sources */,
 				8A9FA5672BEA57C100C96359 /* Constants.swift in Sources */,
 				8A9FA56A2BEA5EA900C96359 /* CardView.swift in Sources */,
 			);
