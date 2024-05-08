@@ -16,4 +16,5 @@ enum TabBarIconsConstants: String {
     case arrowUp = "arrow.up.circle"
     case cross = "xmark"
     case like = "heart.fill"
+    case dismiss = "arrow.down.circle.fill"
 }

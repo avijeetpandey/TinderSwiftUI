@@ -30,6 +30,9 @@
 		8AE5DBCB2BEBA29F00FE51F2 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE5DBCA2BEBA29F00FE51F2 /* MockData.swift */; };
 		8AE5DBCD2BEBBE3B00FE51F2 /* SwipeActionButtonViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE5DBCC2BEBBE3B00FE51F2 /* SwipeActionButtonViews.swift */; };
 		8AE5DBCF2BEBC0C900FE51F2 /* SwipeActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE5DBCE2BEBC0C900FE51F2 /* SwipeActions.swift */; };
+		8AE5DBD12BEBF1C200FE51F2 /* ToolBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE5DBD02BEBF1C200FE51F2 /* ToolBarView.swift */; };
+		8AE5DBD32BEBF27000FE51F2 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE5DBD22BEBF27000FE51F2 /* AppConstants.swift */; };
+		8AE5DBD62BEBF6DD00FE51F2 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE5DBD52BEBF6DD00FE51F2 /* UserProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +79,9 @@
 		8AE5DBCA2BEBA29F00FE51F2 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		8AE5DBCC2BEBBE3B00FE51F2 /* SwipeActionButtonViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeActionButtonViews.swift; sourceTree = "<group>"; };
 		8AE5DBCE2BEBC0C900FE51F2 /* SwipeActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeActions.swift; sourceTree = "<group>"; };
+		8AE5DBD02BEBF1C200FE51F2 /* ToolBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBarView.swift; sourceTree = "<group>"; };
+		8AE5DBD22BEBF27000FE51F2 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		8AE5DBD52BEBF6DD00FE51F2 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +175,7 @@
 				8A9FA5662BEA57C100C96359 /* Constants.swift */,
 				8A9FA56F2BEA8EB400C96359 /* SizeConstants.swift */,
 				8AE5DBCA2BEBA29F00FE51F2 /* MockData.swift */,
+				8AE5DBD22BEBF27000FE51F2 /* AppConstants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -226,6 +233,7 @@
 		8A9FA5602BEA564500C96359 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				8AE5DBD42BEBF6CF00FE51F2 /* Views */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -266,6 +274,7 @@
 				8A9FA5732BEAA36F00C96359 /* CardImageIndicatorView.swift */,
 				8AE5DBBB2BEB9DAE00FE51F2 /* CardStackView.swift */,
 				8AE5DBCC2BEBBE3B00FE51F2 /* SwipeActionButtonViews.swift */,
+				8AE5DBD02BEBF1C200FE51F2 /* ToolBarView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -309,6 +318,14 @@
 				8AE5DBC82BEBA1A300FE51F2 /* CardService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		8AE5DBD42BEBF6CF00FE51F2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8AE5DBD52BEBF6DD00FE51F2 /* UserProfileView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -448,6 +465,8 @@
 				8A9FA56E2BEA6D0B00C96359 /* SwipeActionIndicatiorView.swift in Sources */,
 				8A9FA5722BEA915B00C96359 /* ImageScrollingOverlay.swift in Sources */,
 				8AE5DBC32BEBA0B400FE51F2 /* CardModel.swift in Sources */,
+				8AE5DBD62BEBF6DD00FE51F2 /* UserProfileView.swift in Sources */,
+				8AE5DBD12BEBF1C200FE51F2 /* ToolBarView.swift in Sources */,
 				8AE5DBCD2BEBBE3B00FE51F2 /* SwipeActionButtonViews.swift in Sources */,
 				8A9FA5742BEAA36F00C96359 /* CardImageIndicatorView.swift in Sources */,
 				8A9FA52F2BEA554600C96359 /* TinderSwiftUIApp.swift in Sources */,
@@ -459,6 +478,7 @@
 				8AE5DBCB2BEBA29F00FE51F2 /* MockData.swift in Sources */,
 				8A9FA5702BEA8EB400C96359 /* SizeConstants.swift in Sources */,
 				8A9FA56A2BEA5EA900C96359 /* CardView.swift in Sources */,
+				8AE5DBD32BEBF27000FE51F2 /* AppConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
