@@ -9,6 +9,7 @@ import SwiftUI
 
 // MARK: - UserInfoView
 struct UserInfoView: View {
+    @Binding var showProfileModal: Bool
     let user: User
     
     var body: some View {
@@ -26,7 +27,7 @@ struct UserInfoView: View {
                 
                 
                 Button {
-                    print("Debug button here")
+                    showProfileModal.toggle()
                 } label: {
                     Image(systemName: TabBarIconsConstants.arrowUp.rawValue)
                         .fontWeight(.bold)
@@ -46,5 +47,5 @@ struct UserInfoView: View {
 }
 
 #Preview {
-    UserInfoView(user: MockData.users[0])
+    UserInfoView(showProfileModal: .constant(true), user: MockData.users[0])
 }
