@@ -16,6 +16,8 @@ struct CardStackView: View {
             ForEach(viewModel.cardModels) { card in
                 CardView(cardModel: card, viewModel: viewModel)
             }
+        }.onChange(of: viewModel.cardModels) { oldValue, newValue in
+            
         }
     }
 }
