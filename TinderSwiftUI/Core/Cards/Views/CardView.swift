@@ -13,30 +13,42 @@ struct CardView: View {
     @State private var xOffset: CGFloat = 0
     @State private var degrees: Double = 0
     @State private var currentImageIndex = 0
-    @State private var mockImages = ["person1","person2","person3"]
+    @State var cardModel: CardModel
+    let viewModel: CardsViewModel
     
     var body: some View {
         ZStack(alignment: .bottom) {
             ZStack(alignment: .top) {
-                Image(mockImages[currentImageIndex])
-                    .resizable()
-                    .scaledToFill()
-                    .overlay {
-                        ImageScrollingOverlay(currentImageIndex: $currentImageIndex,
-                                              imageCount: mockImages.count)
-                    }
+                Image(
+                    cardModel.user.profileImageUrls[currentImageIndex]
+                )
+                .resizable()
+                .scaledToFill()
+                .frame(
+                    width: SizeConstants.cardWidth,
+                    height: SizeConstants.cardHeight)
+                .overlay {
+                    ImageScrollingOverlay(
+                        currentImageIndex: $currentImageIndex,
+                        imageCount: cardModel.user.profileImageUrls.count
+                    )
+                }
                 
-                CardImageIndicatorView(currentImageIndex: currentImageIndex,
-                                       imageCount: mockImages.count)
+                CardImageIndicatorView(
+                    currentImageIndex: currentImageIndex,
+                    imageCount: cardModel.user.profileImageUrls.count
+                )
                 
-                SwipeActionIndicatiorView(xOffset: $xOffset)
+                SwipeActionIndicatiorView(
+                    xOffset: $xOffset
+                )
             }
             
-            UserInfoView()
-                .padding(.horizontal)
-            
-        }                .frame(width: SizeConstants.cardWidth,
-                                height: SizeConstants.cardHeight)
+            UserInfoView(user: cardModel.user)
+        }                .frame(
+            width: SizeConstants.cardWidth,
+            height: SizeConstants.cardHeight
+        )
         .clipShape(RoundedRectangle(cornerRadius: 10))
         .offset(x: xOffset)
         .rotationEffect(.degrees(degrees))
@@ -46,6 +58,26 @@ struct CardView: View {
                 .onChanged(onDragChanged)
                 .onEnded(onDragEnded)
         )
+    }
+}
+
+// MARK: - Swiping functionalities
+private extension CardView {
+    func swipeLeft() {
+        xOffset = -500
+        degrees = -12
+        viewModel.removeCard(cardModel)
+    }
+    
+    func swipeRight() {
+        xOffset = 500
+        degrees = 12
+        viewModel.removeCard(cardModel)
+    }
+    
+    func returnToCenter() {
+        xOffset = 0
+        degrees = 0
     }
 }
 
@@ -60,12 +92,19 @@ private extension CardView {
         let width = value.translation.width
         
         if abs(width) <= abs(SizeConstants.screenCutoff) {
-            xOffset = 0
-            degrees = 0
+            returnToCenter()
+            return
+        }
+        
+        if width >= SizeConstants.screenCutoff {
+            swipeRight()
+        } else {
+            swipeLeft()
         }
     }
 }
 
 #Preview {
-    CardView()
+    CardView(cardModel: .init(user: MockData.users[0]),
+             viewModel: CardsViewModel(service: CardService()))
 }
