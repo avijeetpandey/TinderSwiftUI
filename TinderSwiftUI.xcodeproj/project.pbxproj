@@ -20,6 +20,8 @@
 		8A9FA56C2BEA61AF00C96359 /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9FA56B2BEA61AF00C96359 /* UserInfoView.swift */; };
 		8A9FA56E2BEA6D0B00C96359 /* SwipeActionIndicatiorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9FA56D2BEA6D0B00C96359 /* SwipeActionIndicatiorView.swift */; };
 		8A9FA5702BEA8EB400C96359 /* SizeConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9FA56F2BEA8EB400C96359 /* SizeConstants.swift */; };
+		8A9FA5722BEA915B00C96359 /* ImageScrollingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9FA5712BEA915B00C96359 /* ImageScrollingOverlay.swift */; };
+		8A9FA5742BEAA36F00C96359 /* CardImageIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9FA5732BEAA36F00C96359 /* CardImageIndicatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		8A9FA56B2BEA61AF00C96359 /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
 		8A9FA56D2BEA6D0B00C96359 /* SwipeActionIndicatiorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeActionIndicatiorView.swift; sourceTree = "<group>"; };
 		8A9FA56F2BEA8EB400C96359 /* SizeConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeConstants.swift; sourceTree = "<group>"; };
+		8A9FA5712BEA915B00C96359 /* ImageScrollingOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageScrollingOverlay.swift; sourceTree = "<group>"; };
+		8A9FA5732BEAA36F00C96359 /* CardImageIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageIndicatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +241,8 @@
 				8A9FA5692BEA5EA900C96359 /* CardView.swift */,
 				8A9FA56B2BEA61AF00C96359 /* UserInfoView.swift */,
 				8A9FA56D2BEA6D0B00C96359 /* SwipeActionIndicatiorView.swift */,
+				8A9FA5712BEA915B00C96359 /* ImageScrollingOverlay.swift */,
+				8A9FA5732BEAA36F00C96359 /* CardImageIndicatorView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -374,6 +380,8 @@
 				8A9FA5652BEA56BB00C96359 /* MainTabView.swift in Sources */,
 				8A9FA5312BEA554600C96359 /* RootView.swift in Sources */,
 				8A9FA56E2BEA6D0B00C96359 /* SwipeActionIndicatiorView.swift in Sources */,
+				8A9FA5722BEA915B00C96359 /* ImageScrollingOverlay.swift in Sources */,
+				8A9FA5742BEAA36F00C96359 /* CardImageIndicatorView.swift in Sources */,
 				8A9FA52F2BEA554600C96359 /* TinderSwiftUIApp.swift in Sources */,
 				8A9FA56C2BEA61AF00C96359 /* UserInfoView.swift in Sources */,
 				8A9FA5672BEA57C100C96359 /* Constants.swift in Sources */,

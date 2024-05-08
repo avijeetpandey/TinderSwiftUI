@@ -12,13 +12,22 @@ struct CardView: View {
     // state variables
     @State private var xOffset: CGFloat = 0
     @State private var degrees: Double = 0
+    @State private var currentImageIndex = 0
+    @State private var mockImages = ["person1","person2","person3"]
     
     var body: some View {
         ZStack(alignment: .bottom) {
             ZStack(alignment: .top) {
-                Image(.person1)
+                Image(mockImages[currentImageIndex])
                     .resizable()
                     .scaledToFill()
+                    .overlay {
+                        ImageScrollingOverlay(currentImageIndex: $currentImageIndex,
+                                              imageCount: mockImages.count)
+                    }
+                
+                CardImageIndicatorView(currentImageIndex: currentImageIndex,
+                                       imageCount: mockImages.count)
                 
                 SwipeActionIndicatiorView(xOffset: $xOffset)
             }
@@ -28,15 +37,15 @@ struct CardView: View {
             
         }                .frame(width: SizeConstants.cardWidth,
                                 height: SizeConstants.cardHeight)
-            .clipShape(RoundedRectangle(cornerRadius: 10))
-            .offset(x: xOffset)
-            .rotationEffect(.degrees(degrees))
-            .animation(.snappy, value: xOffset)
-            .gesture(
-                DragGesture()
-                    .onChanged(onDragChanged)
-                    .onEnded(onDragEnded)
-            )
+        .clipShape(RoundedRectangle(cornerRadius: 10))
+        .offset(x: xOffset)
+        .rotationEffect(.degrees(degrees))
+        .animation(.snappy, value: xOffset)
+        .gesture(
+            DragGesture()
+                .onChanged(onDragChanged)
+                .onEnded(onDragEnded)
+        )
     }
 }
 
