@@ -64,15 +64,21 @@ struct CardView: View {
 // MARK: - Swiping functionalities
 private extension CardView {
     func swipeLeft() {
-        xOffset = -500
-        degrees = -12
-        viewModel.removeCard(cardModel)
+        withAnimation {
+            xOffset = -500
+            degrees = -12
+        } completion: {
+            viewModel.removeCard(cardModel)
+        }
     }
     
     func swipeRight() {
-        xOffset = 500
-        degrees = 12
-        viewModel.removeCard(cardModel)
+        withAnimation {
+            xOffset = 500
+            degrees = 12
+        } completion: {
+            viewModel.removeCard(cardModel)
+        }
     }
     
     func returnToCenter() {
