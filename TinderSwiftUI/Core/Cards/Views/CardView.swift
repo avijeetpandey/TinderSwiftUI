@@ -52,7 +52,7 @@ struct CardView: View {
         )
         .clipShape(RoundedRectangle(cornerRadius: 10))
         .fullScreenCover(isPresented: $showProfileModal) {
-            Text("Profile screen")
+            UserProfileView(user: cardModel.user)
         }
         .offset(x: xOffset)
         .rotationEffect(.degrees(degrees))
