@@ -28,6 +28,7 @@
 		8AE5DBC62BEBA0F800FE51F2 /* CardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE5DBC52BEBA0F800FE51F2 /* CardsViewModel.swift */; };
 		8AE5DBC92BEBA1A300FE51F2 /* CardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE5DBC82BEBA1A300FE51F2 /* CardService.swift */; };
 		8AE5DBCB2BEBA29F00FE51F2 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE5DBCA2BEBA29F00FE51F2 /* MockData.swift */; };
+		8AE5DBCD2BEBBE3B00FE51F2 /* SwipeActionButtonViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE5DBCC2BEBBE3B00FE51F2 /* SwipeActionButtonViews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		8AE5DBC52BEBA0F800FE51F2 /* CardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewModel.swift; sourceTree = "<group>"; };
 		8AE5DBC82BEBA1A300FE51F2 /* CardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardService.swift; sourceTree = "<group>"; };
 		8AE5DBCA2BEBA29F00FE51F2 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		8AE5DBCC2BEBBE3B00FE51F2 /* SwipeActionButtonViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeActionButtonViews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,6 +263,7 @@
 				8A9FA5712BEA915B00C96359 /* ImageScrollingOverlay.swift */,
 				8A9FA5732BEAA36F00C96359 /* CardImageIndicatorView.swift */,
 				8AE5DBBB2BEB9DAE00FE51F2 /* CardStackView.swift */,
+				8AE5DBCC2BEBBE3B00FE51F2 /* SwipeActionButtonViews.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -442,6 +445,7 @@
 				8A9FA56E2BEA6D0B00C96359 /* SwipeActionIndicatiorView.swift in Sources */,
 				8A9FA5722BEA915B00C96359 /* ImageScrollingOverlay.swift in Sources */,
 				8AE5DBC32BEBA0B400FE51F2 /* CardModel.swift in Sources */,
+				8AE5DBCD2BEBBE3B00FE51F2 /* SwipeActionButtonViews.swift in Sources */,
 				8A9FA5742BEAA36F00C96359 /* CardImageIndicatorView.swift in Sources */,
 				8A9FA52F2BEA554600C96359 /* TinderSwiftUIApp.swift in Sources */,
 				8AE5DBC62BEBA0F800FE51F2 /* CardsViewModel.swift in Sources */,
