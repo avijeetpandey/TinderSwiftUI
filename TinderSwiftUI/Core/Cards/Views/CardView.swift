@@ -53,6 +53,9 @@ struct CardView: View {
         .offset(x: xOffset)
         .rotationEffect(.degrees(degrees))
         .animation(.snappy, value: xOffset)
+        .onReceive(viewModel.$buttonSwipeAction, perform: { action in
+           onRecieveSwipeAction(action)
+        })
         .gesture(
             DragGesture()
                 .onChanged(onDragChanged)
@@ -84,6 +87,20 @@ private extension CardView {
     func returnToCenter() {
         xOffset = 0
         degrees = 0
+    }
+    
+    func onRecieveSwipeAction(_ action: SwipeAction?) {
+        guard let action = action else { return }
+        let topCard = viewModel.cardModels.last
+        
+        if topCard == cardModel {
+            switch action {
+            case .like:
+                swipeRight()
+            case .reject:
+                swipeLeft()
+            }
+        }
     }
 }
 

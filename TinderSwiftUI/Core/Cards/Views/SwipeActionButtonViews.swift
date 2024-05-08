@@ -9,10 +9,12 @@ import SwiftUI
 
 // MARK: - SwipeActionButtonViews
 struct SwipeActionButtonViews: View {
+    @ObservedObject var viewModel: CardsViewModel
+    
     var body: some View {
         HStack(spacing: 32) {
             Button {
-                
+                viewModel.buttonSwipeAction = .reject
             } label: {
                 Image(systemName: TabBarIconsConstants.cross.rawValue)
                     .fontWeight(.heavy)
@@ -27,7 +29,7 @@ struct SwipeActionButtonViews: View {
             
             
             Button {
-                
+                viewModel.buttonSwipeAction = .like
             } label: {
                 Image(systemName: TabBarIconsConstants.like.rawValue)
                     .fontWeight(.heavy)
@@ -44,5 +46,5 @@ struct SwipeActionButtonViews: View {
 }
 
 #Preview {
-    SwipeActionButtonViews()
+    SwipeActionButtonViews(viewModel: CardsViewModel(service: CardService()))
 }
