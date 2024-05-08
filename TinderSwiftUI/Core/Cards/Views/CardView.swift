@@ -26,6 +26,9 @@ struct CardView: View {
                                               imageCount: mockImages.count)
                     }
                 
+                CardImageIndicatorView(currentImageIndex: currentImageIndex,
+                                       imageCount: mockImages.count)
+                
                 SwipeActionIndicatiorView(xOffset: $xOffset)
             }
             
@@ -34,15 +37,15 @@ struct CardView: View {
             
         }                .frame(width: SizeConstants.cardWidth,
                                 height: SizeConstants.cardHeight)
-            .clipShape(RoundedRectangle(cornerRadius: 10))
-            .offset(x: xOffset)
-            .rotationEffect(.degrees(degrees))
-            .animation(.snappy, value: xOffset)
-            .gesture(
-                DragGesture()
-                    .onChanged(onDragChanged)
-                    .onEnded(onDragEnded)
-            )
+        .clipShape(RoundedRectangle(cornerRadius: 10))
+        .offset(x: xOffset)
+        .rotationEffect(.degrees(degrees))
+        .animation(.snappy, value: xOffset)
+        .gesture(
+            DragGesture()
+                .onChanged(onDragChanged)
+                .onEnded(onDragEnded)
+        )
     }
 }
 
