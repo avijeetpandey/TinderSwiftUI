@@ -12,12 +12,16 @@ struct CardStackView: View {
     @StateObject var viewModel = CardsViewModel(service: CardService())
     
     var body: some View {
-        ZStack {
-            ForEach(viewModel.cardModels) { card in
-                CardView(cardModel: card, viewModel: viewModel)
+        VStack(spacing: 16) {
+            ZStack {
+                ForEach(viewModel.cardModels) { card in
+                    CardView(cardModel: card, viewModel: viewModel)
+                }
             }
-        }.onChange(of: viewModel.cardModels) { oldValue, newValue in
             
+            if !viewModel.cardModels.isEmpty {
+                SwipeActionButtonViews(viewModel: viewModel)
+            }
         }
     }
 }

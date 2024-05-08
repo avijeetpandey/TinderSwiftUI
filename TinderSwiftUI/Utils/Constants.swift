@@ -14,4 +14,6 @@ enum TabBarIconsConstants: String {
     case messaging = "bubble"
     case home = "flame"
     case arrowUp = "arrow.up.circle"
+    case cross = "xmark"
+    case like = "heart.fill"
 }
