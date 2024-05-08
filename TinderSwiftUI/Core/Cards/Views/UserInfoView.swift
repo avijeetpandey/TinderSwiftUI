@@ -34,7 +34,7 @@ struct UserInfoView: View {
                 }
             }
             
-            Text("Actress | Witch")
+            Text(user.bio)
                 .font(.subheadline)
                 .lineLimit(2)
         }.padding()

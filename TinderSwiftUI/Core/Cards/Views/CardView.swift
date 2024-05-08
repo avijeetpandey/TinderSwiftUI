@@ -14,6 +14,7 @@ struct CardView: View {
     @State private var degrees: Double = 0
     @State private var currentImageIndex = 0
     @State var cardModel: CardModel
+    let viewModel: CardsViewModel
     
     var body: some View {
         ZStack(alignment: .bottom) {
@@ -65,11 +66,13 @@ private extension CardView {
     func swipeLeft() {
         xOffset = -500
         degrees = -12
+        viewModel.removeCard(cardModel)
     }
     
     func swipeRight() {
         xOffset = 500
         degrees = 12
+        viewModel.removeCard(cardModel)
     }
     
     func returnToCenter() {
@@ -102,5 +105,6 @@ private extension CardView {
 }
 
 #Preview {
-    CardView(cardModel: .init(user: MockData.users[0]))
+    CardView(cardModel: .init(user: MockData.users[0]),
+             viewModel: CardsViewModel(service: CardService()))
 }

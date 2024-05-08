@@ -14,7 +14,7 @@ struct CardStackView: View {
     var body: some View {
         ZStack {
             ForEach(viewModel.cardModels) { card in
-                CardView(cardModel: card)
+                CardView(cardModel: card, viewModel: viewModel)
             }
         }
     }

@@ -27,4 +27,9 @@ class CardsViewModel: ObservableObject {
             debugPrint("DEBUG: Failed to print cards")
         }
     }
+    
+    func removeCard(_ model: CardModel) {
+        guard let index = cardModels.firstIndex(where: {card in model.id == card.id}) else { return }
+        cardModels.remove(at: index)
+    }
 }
