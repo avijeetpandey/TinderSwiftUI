@@ -19,7 +19,7 @@ struct ToolBarView: View {
                 .frame(width: 12, height: 16)
             
             Text(AppConstants.toolbarTitle.rawValue)
-                .font(.callout)
+                .font(.subheadline)
                 .bold()
         }
         
