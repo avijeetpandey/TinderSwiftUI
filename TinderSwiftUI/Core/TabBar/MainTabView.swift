@@ -26,7 +26,8 @@ struct MainTabView: View {
                     Image(systemName: TabBarIconsConstants.messaging.rawValue)
                 }
             
-            Text("Profile view").tabItem {
+            CurrentProfileView(user: MockData.users[0])
+                .tabItem {
                 Image(systemName: TabBarIconsConstants.profile.rawValue)
             }
         }.tint(.primary)
