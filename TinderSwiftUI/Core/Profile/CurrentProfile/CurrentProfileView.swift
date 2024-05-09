@@ -9,51 +9,60 @@ import SwiftUI
 
 // MARK: - CurrentProfileView
 struct CurrentProfileView: View {
+    @State private var showEditProfile = false
     let user: User
     
     var body: some View {
-        List {
-            // Header view
-            CurrentUserProfileHeaderView(user: user)
-            
-            // account info view
-            Section("Account Settings") {
-                HStack{
-                    Text("Name")
-                    Spacer()
-                    Text(user.fullName)
+        NavigationStack {
+            List {
+                // Header view
+                CurrentUserProfileHeaderView(user: user)
+                    .onTapGesture {
+                        showEditProfile.toggle()
+                    }
+                
+                // account info view
+                Section("Account Settings") {
+                    HStack{
+                        Text("Name")
+                        Spacer()
+                        Text(user.fullName)
+                    }
+                    
+                    HStack{
+                        Text("Email")
+                        Spacer()
+                        Text(user.email)
+                    }
                 }
                 
-                HStack{
-                    Text("Email")
-                    Spacer()
-                    Text(user.email)
+                // legal view
+                
+                Section("Legal") {
+                    Text("Terms Of Service")
                 }
-            }
-            
-            // legal view
-            
-            Section("Legal") {
-                Text("Terms Of Service")
-            }
-            
-            // Logout/ delete account view
-            Section {
-                Button("Logout") {
-                    debugPrint("Logout tapped")
+                
+                // Logout/ delete account view
+                Section {
+                    Button("Logout") {
+                        debugPrint("Logout tapped")
+                    }
+                }.foregroundStyle(.red)
+                
+                Section {
+                    Button("Delete Account") {
+                        debugPrint("Delete Account tapped")
+                    }
+                }.foregroundStyle(.red)
+            }.navigationTitle("Profile")
+                .navigationBarTitleDisplayMode(.inline)
+                .fullScreenCover(isPresented: $showEditProfile) {
+                    EditProfileView()
                 }
-            }.foregroundStyle(.red)
-            
-            Section {
-                Button("Delete Account") {
-                    debugPrint("Delete Account tapped")
-                }
-            }.foregroundStyle(.red)
         }
     }
 }
 
 #Preview {
     CurrentProfileView(user: MockData.users[1])
-        .preferredColorScheme(.dark)
 }
