@@ -10,4 +10,5 @@ import Foundation
 // MARK: - AppConstants
 enum AppConstants: String {
     case toolbarTitle = "TinderSwiftUI"
+    case editScreenTitle = "Edit Info"
 }
