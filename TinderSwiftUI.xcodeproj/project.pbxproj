@@ -35,6 +35,7 @@
 		8AE5DBD62BEBF6DD00FE51F2 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE5DBD52BEBF6DD00FE51F2 /* UserProfileView.swift */; };
 		8AE5DBDA2BEC8F3400FE51F2 /* CurrentProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE5DBD92BEC8F3400FE51F2 /* CurrentProfileView.swift */; };
 		8AE5DBDC2BEC910800FE51F2 /* CurrentUserProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE5DBDB2BEC910800FE51F2 /* CurrentUserProfileHeaderView.swift */; };
+		8AE5DBE22BEC996B00FE51F2 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE5DBE12BEC996B00FE51F2 /* EditProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		8AE5DBD52BEBF6DD00FE51F2 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
 		8AE5DBD92BEC8F3400FE51F2 /* CurrentProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentProfileView.swift; sourceTree = "<group>"; };
 		8AE5DBDB2BEC910800FE51F2 /* CurrentUserProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileHeaderView.swift; sourceTree = "<group>"; };
+		8AE5DBE12BEC996B00FE51F2 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +239,7 @@
 		8A9FA5602BEA564500C96359 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				8AE5DBE02BEC996000FE51F2 /* EditProfile */,
 				8AE5DBD82BEC8F2500FE51F2 /* CurrentProfile */,
 				8AE5DBD72BEC8F1900FE51F2 /* UserProfile */,
 			);
@@ -340,6 +343,14 @@
 				8AE5DBDB2BEC910800FE51F2 /* CurrentUserProfileHeaderView.swift */,
 			);
 			path = CurrentProfile;
+			sourceTree = "<group>";
+		};
+		8AE5DBE02BEC996000FE51F2 /* EditProfile */ = {
+			isa = PBXGroup;
+			children = (
+				8AE5DBE12BEC996B00FE51F2 /* EditProfileView.swift */,
+			);
+			path = EditProfile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -490,6 +501,7 @@
 				8A9FA56C2BEA61AF00C96359 /* UserInfoView.swift in Sources */,
 				8AE5DBC02BEBA00600FE51F2 /* User.swift in Sources */,
 				8A9FA5672BEA57C100C96359 /* Constants.swift in Sources */,
+				8AE5DBE22BEC996B00FE51F2 /* EditProfileView.swift in Sources */,
 				8AE5DBCF2BEBC0C900FE51F2 /* SwipeActions.swift in Sources */,
 				8AE5DBCB2BEBA29F00FE51F2 /* MockData.swift in Sources */,
 				8A9FA5702BEA8EB400C96359 /* SizeConstants.swift in Sources */,
