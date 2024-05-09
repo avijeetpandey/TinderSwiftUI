@@ -37,6 +37,8 @@
 		8AE5DBDC2BEC910800FE51F2 /* CurrentUserProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE5DBDB2BEC910800FE51F2 /* CurrentUserProfileHeaderView.swift */; };
 		8AE5DBE22BEC996B00FE51F2 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE5DBE12BEC996B00FE51F2 /* EditProfileView.swift */; };
 		8AE5DBE42BEC9D9A00FE51F2 /* ActionItemsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE5DBE32BEC9D9A00FE51F2 /* ActionItemsConstants.swift */; };
+		8AE5DBE62BEC9EC800FE51F2 /* EditProfileGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE5DBE52BEC9EC800FE51F2 /* EditProfileGridView.swift */; };
+		8AE5DBE82BECA3ED00FE51F2 /* EmptyImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE5DBE72BECA3ED00FE51F2 /* EmptyImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +92,8 @@
 		8AE5DBDB2BEC910800FE51F2 /* CurrentUserProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileHeaderView.swift; sourceTree = "<group>"; };
 		8AE5DBE12BEC996B00FE51F2 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		8AE5DBE32BEC9D9A00FE51F2 /* ActionItemsConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionItemsConstants.swift; sourceTree = "<group>"; };
+		8AE5DBE52BEC9EC800FE51F2 /* EditProfileGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileGridView.swift; sourceTree = "<group>"; };
+		8AE5DBE72BECA3ED00FE51F2 /* EmptyImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -352,6 +356,8 @@
 			isa = PBXGroup;
 			children = (
 				8AE5DBE12BEC996B00FE51F2 /* EditProfileView.swift */,
+				8AE5DBE52BEC9EC800FE51F2 /* EditProfileGridView.swift */,
+				8AE5DBE72BECA3ED00FE51F2 /* EmptyImageView.swift */,
 			);
 			path = EditProfile;
 			sourceTree = "<group>";
@@ -498,6 +504,7 @@
 				8AE5DBD12BEBF1C200FE51F2 /* ToolBarView.swift in Sources */,
 				8AE5DBCD2BEBBE3B00FE51F2 /* SwipeActionButtonViews.swift in Sources */,
 				8A9FA5742BEAA36F00C96359 /* CardImageIndicatorView.swift in Sources */,
+				8AE5DBE62BEC9EC800FE51F2 /* EditProfileGridView.swift in Sources */,
 				8A9FA52F2BEA554600C96359 /* TinderSwiftUIApp.swift in Sources */,
 				8AE5DBC62BEBA0F800FE51F2 /* CardsViewModel.swift in Sources */,
 				8AE5DBDC2BEC910800FE51F2 /* CurrentUserProfileHeaderView.swift in Sources */,
@@ -508,6 +515,7 @@
 				8AE5DBE22BEC996B00FE51F2 /* EditProfileView.swift in Sources */,
 				8AE5DBCF2BEBC0C900FE51F2 /* SwipeActions.swift in Sources */,
 				8AE5DBCB2BEBA29F00FE51F2 /* MockData.swift in Sources */,
+				8AE5DBE82BECA3ED00FE51F2 /* EmptyImageView.swift in Sources */,
 				8A9FA5702BEA8EB400C96359 /* SizeConstants.swift in Sources */,
 				8A9FA56A2BEA5EA900C96359 /* CardView.swift in Sources */,
 				8AE5DBD32BEBF27000FE51F2 /* AppConstants.swift in Sources */,

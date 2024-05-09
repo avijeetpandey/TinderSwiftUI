@@ -57,7 +57,7 @@ struct CurrentProfileView: View {
             }.navigationTitle("Profile")
                 .navigationBarTitleDisplayMode(.inline)
                 .fullScreenCover(isPresented: $showEditProfile) {
-                    EditProfileView()
+                    EditProfileView(user: user)
                 }
         }
     }
