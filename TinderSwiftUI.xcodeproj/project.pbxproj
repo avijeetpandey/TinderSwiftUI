@@ -33,6 +33,8 @@
 		8AE5DBD12BEBF1C200FE51F2 /* ToolBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE5DBD02BEBF1C200FE51F2 /* ToolBarView.swift */; };
 		8AE5DBD32BEBF27000FE51F2 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE5DBD22BEBF27000FE51F2 /* AppConstants.swift */; };
 		8AE5DBD62BEBF6DD00FE51F2 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE5DBD52BEBF6DD00FE51F2 /* UserProfileView.swift */; };
+		8AE5DBDA2BEC8F3400FE51F2 /* CurrentProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE5DBD92BEC8F3400FE51F2 /* CurrentProfileView.swift */; };
+		8AE5DBDC2BEC910800FE51F2 /* CurrentUserProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE5DBDB2BEC910800FE51F2 /* CurrentUserProfileHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,8 @@
 		8AE5DBD02BEBF1C200FE51F2 /* ToolBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBarView.swift; sourceTree = "<group>"; };
 		8AE5DBD22BEBF27000FE51F2 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		8AE5DBD52BEBF6DD00FE51F2 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
+		8AE5DBD92BEC8F3400FE51F2 /* CurrentProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentProfileView.swift; sourceTree = "<group>"; };
+		8AE5DBDB2BEC910800FE51F2 /* CurrentUserProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,7 +237,8 @@
 		8A9FA5602BEA564500C96359 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				8AE5DBD42BEBF6CF00FE51F2 /* Views */,
+				8AE5DBD82BEC8F2500FE51F2 /* CurrentProfile */,
+				8AE5DBD72BEC8F1900FE51F2 /* UserProfile */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -320,12 +325,21 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
-		8AE5DBD42BEBF6CF00FE51F2 /* Views */ = {
+		8AE5DBD72BEC8F1900FE51F2 /* UserProfile */ = {
 			isa = PBXGroup;
 			children = (
 				8AE5DBD52BEBF6DD00FE51F2 /* UserProfileView.swift */,
 			);
-			path = Views;
+			path = UserProfile;
+			sourceTree = "<group>";
+		};
+		8AE5DBD82BEC8F2500FE51F2 /* CurrentProfile */ = {
+			isa = PBXGroup;
+			children = (
+				8AE5DBD92BEC8F3400FE51F2 /* CurrentProfileView.swift */,
+				8AE5DBDB2BEC910800FE51F2 /* CurrentUserProfileHeaderView.swift */,
+			);
+			path = CurrentProfile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -458,6 +472,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AE5DBDA2BEC8F3400FE51F2 /* CurrentProfileView.swift in Sources */,
 				8A9FA5652BEA56BB00C96359 /* MainTabView.swift in Sources */,
 				8AE5DBC92BEBA1A300FE51F2 /* CardService.swift in Sources */,
 				8A9FA5312BEA554600C96359 /* RootView.swift in Sources */,
@@ -471,6 +486,7 @@
 				8A9FA5742BEAA36F00C96359 /* CardImageIndicatorView.swift in Sources */,
 				8A9FA52F2BEA554600C96359 /* TinderSwiftUIApp.swift in Sources */,
 				8AE5DBC62BEBA0F800FE51F2 /* CardsViewModel.swift in Sources */,
+				8AE5DBDC2BEC910800FE51F2 /* CurrentUserProfileHeaderView.swift in Sources */,
 				8A9FA56C2BEA61AF00C96359 /* UserInfoView.swift in Sources */,
 				8AE5DBC02BEBA00600FE51F2 /* User.swift in Sources */,
 				8A9FA5672BEA57C100C96359 /* Constants.swift in Sources */,
